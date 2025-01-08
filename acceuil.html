@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="https://api.netlify.com/api/v1/badges/820cbd1c-b917-4a06-b906-be49765d45d4/deploy-status)](https://app.netlify.com/sites/gentle-tulumba-c1c013/deploys)" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LES COURS SONOU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="verifier_connexion.php" method="POST">
+      <div class="main-container">
+        <div class="screenshot-captive-portal"></div>
+        <div class="frame">
+          <div class="form-log-in">
+
+            <!-- Champ pour l'Identifiant -->
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre matricule" type="text" id="matricule" name="matricule" required />
+            </div>
+
+            <!-- Champ pour le Mot de Passe -->
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre mot de passe" type="password" id="mot_de_passe" name="mot_de_passe" required />
+            </div>
+
+            <!-- Bouton de connexion -->
+            <button type="submit" class="button-group">
+              <div class="button-container">
+                <span class="connect-button">Se connecter</span>
+              </div>
+            </button>
+
+            <!-- Bouton pour obtenir les identifiants -->
+            <button type="button" class="button-group-5" onclick="redirigerVersPage()">
+              <div class="button">
+                <span class="button-6">Obtenir mes identifiants</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      // Redirection vers une page lorsque l'on clique sur "Obtenir mes identifiants"
+      function redirigerVersPage() {
+        window.location.href = "page2.html"; // Remplacez par le chemin de votre page cible
+      }
+    </script>
+  </body>
+</html>

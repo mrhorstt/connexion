@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LES COURS SONOU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="enregistrer.php" method="POST">
+      <div class="main-container">
+        <div class="screenshot-captive-portal"></div>
+        <div class="frame">
+          <div class="form-log-in">
+
+            <!-- Formulaire -->
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre matricule" type="text" name="matricule" required />
+            </div>
+
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre nom de famille" type="text" name="nom_famille" required />
+            </div>
+
+            <div class="input-field-2">
+              <select name="sexe" class="input-3" required>
+                <option value="">Sexe</option>
+                <option value="M">Masculin</option>
+                <option value="F">Féminin</option>
+              </select>
+            </div>
+
+            <div class="input-field-2">
+              <select name="filiere" class="input-3" required>
+                <option value="">Filiere</option>
+                <option value="BFA1">BFA1</option>
+                <option value="BFA2">BFA2</option>
+                <option value="BFA3">BFA3</option>
+                <option value="CE1">CE1</option>
+                <option value="CE2">CE2</option>
+                <option value="CE3">CE3</option>
+                <option value="INF1">INF1</option>
+                <option value="INF2">INF2</option>
+              </select>
+            </div>
+
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre email" type="email" name="email" required />
+            </div>
+
+            <div class="input-field-2">
+              <input class="input-3" placeholder="Entrez votre numero" type="text" name="numero" required />
+            </div>
+
+            <!-- Boutons -->
+            <button class="button-group">
+              <div class="button-container">
+                <span class="connect-button">Recevoir mes identifiants</span>
+              </div>
+            </button>
+
+
+            <button type="button" class="button-group" onclick="redirigerVersPage1()">
+              <div class="button-container">
+                <span class="connect-button">J'ai mes identifiants</span>
+              </div>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      // Redirection vers une page lorsque l'on clique sur "J'ai mes identifiants"
+      function redirigerVersPage1() {
+        window.location.href = "acceuil.html"; // Remplacez par le chemin de votre page cible
+      }
+    </script>
+
+  </body>
+</html>
